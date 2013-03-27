@@ -1,0 +1,13 @@
+<div id="container">
+    <div id="rowWraper" class="row">
+            <div id="col1" class="col">
+                Column 1<br />Lorem ipsum<br />ipsum lorem
+            </div>
+            <div id="col2" class="col">
+                Column 2<br />Eco cologna duo est!
+            </div>
+            <div id="col3" class="col">
+                Column 3
+            </div>
+        </div>
+</div>
