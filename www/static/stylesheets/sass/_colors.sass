@@ -1,4 +1,4 @@
-$base-color: #0080ff
+$base-color: yellow
 
 // Monocromatic
 $m-hue: $base-color
@@ -16,8 +16,8 @@ $monocromatic: $m-hue $m-desaturate-20 $m-desaturate-40 $m-desaturate-60 $m-desa
 
 // Analogous
 $a-hue: $base-color
-$a-1: adjust-hue($a-hue, -30)
-$a-2: adjust-hue($a-hue, -60)
+$a-1: adjust-hue($a-hue, 30)
+$a-2: adjust-hue($a-hue, -30)
 $analogous: $a-hue, $a-1, $a-2
 
 @for $i from 1 through 3
@@ -35,32 +35,7 @@ $complementary: $c-hue, $c-1
         $color: nth($complementary, $i)
         .complementary-#{$i}
                 background-color: $color
-
-// Triad
-$t-hue: $base-color
-$t-1: adjust-hue($t-hue, 120)
-$t-2: adjust-hue($t-hue, -120)
-$triad: $t-hue, $t-1, $t-2
- 
-@for $i from 1 through 3
-        $color: nth($triad, $i)
-        .triad-#{$i}
-                background-color: $color
-
-
-// Split Complementary
-$sc-hue: $base-color
-$sc-1: adjust-hue($sc-hue, 150)
-$sc-2: adjust-hue($sc-hue, 210)
-$s_complementary: $sc-hue, $sc-1, $sc-2
-
-@for $i from 1 through 3
-        $color: nth($s_complementary, $i)
-        .s_complementary-#{$i}
-                background-color: $color
-
-
-
+                
 div
         width: 100px
         height: 100px
