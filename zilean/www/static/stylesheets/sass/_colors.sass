@@ -1,16 +1,29 @@
-$hue: yellow
-$desaturate-20: desaturate($hue, 20%)
-$desaturate-40: desaturate($hue, 40%)
-$desaturate-60: desaturate($hue, 60%)
-$desaturate-80: desaturate($hue, 80%)
+$base-color: red
 
-$monocromatic: $hue $desaturate-20 $desaturate-40 $desaturate-60 $desaturate-80
+// Monocromatic
+$m-hue: $base-color
+$m-desaturate-20: desaturate($m-hue, 20%)
+$m-desaturate-40: desaturate($m-hue, 40%)
+$m-desaturate-60: desaturate($m-hue, 60%)
+$m-desaturate-80: desaturate($m-hue, 80%)
+$monocromatic: $m-hue $m-desaturate-20 $m-desaturate-40 $m-desaturate-60 $m-desaturate-80
 
 @for $i from 1 through 5
 
         $color: nth($monocromatic, $i)
         .monocromatic-#{$i}
                 background-color: $color 
+
+// Analogous
+$a-hue: $base-color
+$a-1: adjust-hue($a-hue, 30)
+$a-2: adjust-hue($a-hue, -30)
+$analogous: $a-hue, $a-1, $a-2
+
+@for $i from 1 through 3
+        $color: nth($analogous, $i)
+        .analogous-#{$i}
+                background-color: $color
 
 div
         width: 100px

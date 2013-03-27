@@ -42,19 +42,28 @@ table {
   border-spacing: 0; }
 
 .monocromatic-1 {
-  background-color: yellow; }
+  background-color: red; }
 
 .monocromatic-2 {
-  background-color: #e5e619; }
+  background-color: #e61919; }
 
 .monocromatic-3 {
-  background-color: #cccc33; }
+  background-color: #cc3333; }
 
 .monocromatic-4 {
-  background-color: #b2b34d; }
+  background-color: #b34d4d; }
 
 .monocromatic-5 {
-  background-color: #999966; }
+  background-color: #996666; }
+
+.analogous-1 {
+  background-color: red; }
+
+.analogous-2 {
+  background-color: #ff8000; }
+
+.analogous-3 {
+  background-color: #ff0080; }
 
 div {
   width: 100px;
