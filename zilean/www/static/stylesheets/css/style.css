@@ -41,5 +41,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  background-color: blue; }
+.monocromatic-1 {
+  background-color: yellow; }
+
+.monocromatic-2 {
+  background-color: #e5e619; }
+
+.monocromatic-3 {
+  background-color: #cccc33; }
+
+.monocromatic-4 {
+  background-color: #b2b34d; }
+
+.monocromatic-5 {
+  background-color: #999966; }
+
+div {
+  width: 100px;
+  height: 100px;
+  display: inline-block; }

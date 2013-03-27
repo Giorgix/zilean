@@ -1,12 +1,18 @@
-// primary colors
-$red:   #FF0000
-$green: #00FF00
-$blue:  #0000FF
+$hue: yellow
+$desaturate-20: desaturate($hue, 20%)
+$desaturate-40: desaturate($hue, 40%)
+$desaturate-60: desaturate($hue, 60%)
+$desaturate-80: desaturate($hue, 80%)
 
-// secondary colors
-$yellow:  #FFFF00
-$cyan:    #00FFFF
-$magenta: #FF00FF
+$monocromatic: $hue $desaturate-20 $desaturate-40 $desaturate-60 $desaturate-80
 
-body
-        background-color: $blue
+@for $i from 1 through 5
+
+        $color: nth($monocromatic, $i)
+        .monocromatic-#{$i}
+                background-color: $color 
+
+div
+        width: 100px
+        height: 100px
+        display: inline-block
