@@ -42,28 +42,34 @@ table {
   border-spacing: 0; }
 
 .monocromatic-1 {
-  background-color: red; }
+  background-color: yellow; }
 
 .monocromatic-2 {
-  background-color: #e61919; }
+  background-color: #e5e619; }
 
 .monocromatic-3 {
-  background-color: #cc3333; }
+  background-color: #cccc33; }
 
 .monocromatic-4 {
-  background-color: #b34d4d; }
+  background-color: #b2b34d; }
 
 .monocromatic-5 {
-  background-color: #996666; }
+  background-color: #999966; }
 
 .analogous-1 {
-  background-color: red; }
+  background-color: yellow; }
 
 .analogous-2 {
-  background-color: #ff8000; }
+  background-color: #80ff00; }
 
 .analogous-3 {
-  background-color: #ff0080; }
+  background-color: #ff8000; }
+
+.complementary-1 {
+  background-color: yellow; }
+
+.complementary-2 {
+  background-color: blue; }
 
 div {
   width: 100px;

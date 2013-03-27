@@ -25,17 +25,6 @@ $analogous: $a-hue, $a-1, $a-2
         .analogous-#{$i}
                 background-color: $color
 
-
-// Complementary
-$c-hue: $base-color
-$c-1: adjust-hue($c-hue, 180)
-$complementary: $c-hue, $c-1
-
-@for $i from 1 through 2
-        $color: nth($complementary, $i)
-        .complementary-#{$i}
-                background-color: $color
-                
 div
         width: 100px
         height: 100px
