@@ -1,4 +1,4 @@
-$base-color: #0080ff
+$base-color:#BF0000
 
 // Monocromatic
 $m-hue: $base-color
@@ -16,11 +16,13 @@ $monocromatic: $m-hue $m-desaturate-20 $m-desaturate-40 $m-desaturate-60 $m-desa
 
 // Analogous
 $a-hue: $base-color
-$a-1: adjust-hue($a-hue, -30)
-$a-2: adjust-hue($a-hue, -60)
-$analogous: $a-hue, $a-1, $a-2
+$a-1: adjust-hue($a-hue, -20)
+$a-2: adjust-hue($a-hue, -40)
+$a-3:darken($base-color, 20%)
+$a-4:darken($a-2, 20%)
+$analogous: $a-hue, $a-1, $a-2, $a-3, $a-4
 
-@for $i from 1 through 3
+@for $i from 1 through 5
         $color: nth($analogous, $i)
         .analogous-#{$i}
                 background-color: $color
@@ -28,10 +30,13 @@ $analogous: $a-hue, $a-1, $a-2
 
 // Complementary
 $c-hue: $base-color
-$c-1: adjust-hue($c-hue, 180)
-$complementary: $c-hue, $c-1
+$c-1: adjust-hue($c-hue, -10)
+$c-2:adjust-hue($c-hue, 180)
+$c-3:adjust-hue($c-2, -10)
+$c-4:darken($c-hue, 20%)
+$complementary: $c-hue, $c-1, $c-2, $c-3, $c-4
 
-@for $i from 1 through 2
+@for $i from 1 through 5
         $color: nth($complementary, $i)
         .complementary-#{$i}
                 background-color: $color
@@ -40,9 +45,11 @@ $complementary: $c-hue, $c-1
 $t-hue: $base-color
 $t-1: adjust-hue($t-hue, 120)
 $t-2: adjust-hue($t-hue, -120)
-$triad: $t-hue, $t-1, $t-2
+$t-3: darken($t-hue, 20%)
+$t-4: darken($t-2, 20%)
+$triad: $t-hue, $t-1, $t-2, $t-3, $t-4
  
-@for $i from 1 through 3
+@for $i from 1 through 5
         $color: nth($triad, $i)
         .triad-#{$i}
                 background-color: $color
@@ -52,11 +59,28 @@ $triad: $t-hue, $t-1, $t-2
 $sc-hue: $base-color
 $sc-1: adjust-hue($sc-hue, 150)
 $sc-2: adjust-hue($sc-hue, 210)
-$s_complementary: $sc-hue, $sc-1, $sc-2
+$sc-3: darken($sc-2, 20%)
+$sc-4: lighten($sc-hue, 20%)
+$s_complementary: $sc-hue, $sc-1, $sc-2, $sc-3, $sc-4
 
-@for $i from 1 through 3
+@for $i from 1 through 5
         $color: nth($s_complementary, $i)
         .s_complementary-#{$i}
+                background-color: $color
+
+// Double-complementary (Tetradic)
+$dc-hue: $base-color
+$dc-1: adjust-hue($dc-hue, 60)
+$dc-2: adjust-hue($dc-hue, 120)
+$dc-3: adjust-hue($dc-hue, -60)
+$dc-4: adjust-hue($dc-hue, -120)
+//$dc-3: hsl(hue($dc-2), 60, 80)
+//$dc-4: hsl(hue($dc-hue), 60, 80)
+$d_complementary: $dc-hue, $dc-1, $dc-2, $dc-3, $dc-4
+
+@for $i from 1 through 5
+        $color: nth($d_complementary, $i)
+        .d_complementary-#{$i}
                 background-color: $color
 
 

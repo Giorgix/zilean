@@ -42,52 +42,94 @@ table {
   border-spacing: 0; }
 
 .monocromatic-1 {
-  background-color: #0080ff; }
+  background-color: #bf0000; }
 
 .monocromatic-2 {
-  background-color: #1980e6; }
+  background-color: #ac1313; }
 
 .monocromatic-3 {
-  background-color: #3380cc; }
+  background-color: #992626; }
 
 .monocromatic-4 {
-  background-color: #4d80b3; }
+  background-color: #863939; }
 
 .monocromatic-5 {
-  background-color: #668099; }
+  background-color: #734c4c; }
 
 .analogous-1 {
-  background-color: #0080ff; }
+  background-color: #bf0000; }
 
 .analogous-2 {
-  background-color: cyan; }
+  background-color: #bf0040; }
 
 .analogous-3 {
-  background-color: springgreen; }
+  background-color: #bf007f; }
+
+.analogous-4 {
+  background-color: #590000; }
+
+.analogous-5 {
+  background-color: #59003b; }
 
 .complementary-1 {
-  background-color: #0080ff; }
+  background-color: #bf0000; }
 
 .complementary-2 {
-  background-color: #ff7f00; }
+  background-color: #bf0020; }
+
+.complementary-3 {
+  background-color: #00bfbf; }
+
+.complementary-4 {
+  background-color: #00bf9f; }
+
+.complementary-5 {
+  background-color: #590000; }
 
 .triad-1 {
-  background-color: #0080ff; }
+  background-color: #bf0000; }
 
 .triad-2 {
-  background-color: #ff0080; }
+  background-color: #00bf00; }
 
 .triad-3 {
-  background-color: #80ff00; }
+  background-color: #0000bf; }
+
+.triad-4 {
+  background-color: #590000; }
+
+.triad-5 {
+  background-color: #000059; }
 
 .s_complementary-1 {
-  background-color: #0080ff; }
+  background-color: #bf0000; }
 
 .s_complementary-2 {
-  background-color: red; }
+  background-color: #00bf60; }
 
 .s_complementary-3 {
-  background-color: yellow; }
+  background-color: #005fbf; }
+
+.s_complementary-4 {
+  background-color: #002c59; }
+
+.s_complementary-5 {
+  background-color: #ff2626; }
+
+.d_complementary-1 {
+  background-color: #bf0000; }
+
+.d_complementary-2 {
+  background-color: #bfbf00; }
+
+.d_complementary-3 {
+  background-color: #00bf00; }
+
+.d_complementary-4 {
+  background-color: #bf00bf; }
+
+.d_complementary-5 {
+  background-color: #0000bf; }
 
 div {
   width: 100px;
